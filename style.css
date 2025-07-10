@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+.navbar {
+    background: #222;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 1.5rem;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #0078d7;
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1rem;
+}
+.profile-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    text-align: center;
+    padding: 2rem 1rem 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #0078d7;
+}
+.contact-info {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.contact-info a {
+    color: #0078d7;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+section {
+    background: #fff;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+h2 {
+    color: #0078d7;
+    margin-top: 0;
+}
+.skills-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.skills-category {
+    flex: 1 1 220px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    margin-bottom: 1rem;
+}
+.skills-category h3 {
+    color: #111;
+    background: #e6f0fa;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 0;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    padding: 0;
+    list-style: none;
+}
+.skills-list li {
+    background: #e6f0fa;
+    color: #0078d7;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 0 0.2rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+    section {
+        padding: 1rem 0.5rem;
+    }
+}
+@media (max-width: 900px) {
+    .skills-categories {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
